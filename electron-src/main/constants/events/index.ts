@@ -1,0 +1,10 @@
+export enum ApiEvents {
+  REQUEST_GET = 'REQUEST_GET',
+  REQUEST_POST = 'REQUEST_POST',
+  REQUEST_PUT = 'REQUEST_PUT',
+  REQUEST_DELETE = 'REQUEST_DELETE',
+}
+
+// export enum JobsEvents {
+//   START_PLAYLIST_UPDATER: 
+// }

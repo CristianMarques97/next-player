@@ -1,0 +1,32 @@
+appId: br.com.cristian.next_player
+icon: ./assets/logo.png
+asar: true
+directories:
+  output: ./dist
+files:
+  - main
+  - renderer
+  - preload
+  - .env
+  - assets
+  - license.html
+extraMetadata:
+  main: main/index.js
+win:
+  artifactName: ${name}-${version}-windows-${arch}.${ext}
+  icon: ./assets/logo.ico
+  target:
+    - { target: nsis }
+nsis:
+  deleteAppDataOnUninstall: true
+  license: license.html
+snap:
+  confinement: strict
+  grade: stable
+  plugs:
+    - default
+    - browser-support
+    - network
+    - audio-playback
+  autoStart: true
+  category: AudioVideo
